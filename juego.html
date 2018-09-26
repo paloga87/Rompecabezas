@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>BMO Arcade</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <!--GoogleFont-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Short+Stack" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  </head>
+  <body>
+    <div class="contenedor" >
+      <div class="col-40">
+      
+        <div id="titulo">
+          <h1>BMO Puzzle</h1>
+        </div>
+        <div id="instrucciones">
+          <h2 class="subtitulo">Instrucciones</h2>
+          <ul id="lista-instrucciones">
+            
+          </ul>
+        </div>
+        <div id="objetivo">
+          <h2 class="subtitulo">Objetivo</h2>
+          <div class="texto-centrado">
+              <img src="images/final.png">
+          </div>
+        </div>
+        <div id="ultimo-mov">
+          <h2 class="subtitulo">Ultimo Movimiento</h2>
+          <div id="flecha" class="texto-centrado">
+            
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-60">
+        <div id="juego">
+          <div id="pieza1"><img src="images/10.jpg"></div>
+          <div id="pieza2"><img src="images/20.jpg"></div>
+          <div id="pieza3"><img src="images/30.jpg"></div>
+          <div id="pieza4"><img src="images/40.jpg"></div>
+          <div id="pieza5"><img src="images/50.jpg"></div>
+          <div id="pieza6"><img src="images/60.jpg"></div>
+          <div id="pieza7"><img src="images/70.jpg"></div>
+          <div id="pieza8"><img src="images/80.jpg"></div>
+          <div id="pieza9"></div>
+        </div>
+         <div id="botonInicio" class="" onclick="carga()">Iniciar Juego</div>
+      </div>
+      <div id="footer">
+         
+      </div>
+      <div id="modal" onclick="closeAlert()" onload="detenerse()"">
+        <div class="alerta">
+          <h2>GANASTE!!!</h2>
+          <p>Lo has logrado en</p><p id="cantidadMovimientos"></p><p>movimientos y...</p>
+          <p> <span id="minutos">0</span> minutos con <span id="segundos">0</span> segundos!!</p>
+          <div class="volver"><a href="juego.html">Volver a jugar</a></div>
+        </div> 
+
+      </div>
+    </div>
+    <script src="js/juego.js"></script>
+  </body>
+</html>
